@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Car Showroom - Your Dream Car Awaits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-car"></i>
+                <span>AutoHub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Car</h1>
+            <p>Explore our premium collection of new and used vehicles</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='cars.html'">
+                    <i class="fas fa-car"></i> View Cars
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('testDriveModal').style.display='block'">
+                    <i class="fas fa-calendar"></i> Book Test Drive
+                </button>
+                <button class="btn btn-outline" onclick="document.getElementById('contactModal').style.display='block'">
+                    <i class="fas fa-phone"></i> Contact Us
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-car.jpg" alt="Premium Car">
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section id="featured" class="featured-cars">
+        <div class="container">
+            <h2>Featured Cars</h2>
+            <p class="section-subtitle">Handpicked vehicles just for you</p>
+            <div class="cars-grid" id="featuredCars">
+                <!-- Cars will be loaded from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why" class="why-choose">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Verified Vehicles</h3>
+                    <p>All cars are thoroughly inspected and certified</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Easy Finance</h3>
+                    <p>Flexible payment options and instant EMI calculation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Warranty</h3>
+                    <p>Extended warranty on all vehicles</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round the clock customer support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="customer-reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best car buying experience. Highly recommended!"</p>
+                    <h4>Rajesh Kumar</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Great service and quality vehicles. Worth every penny."</p>
+                    <h4>Priya Singh</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Professional team and transparent pricing. Very satisfied!"</p>
+                    <h4>Amit Patel</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Location & Contact -->
+    <section id="location" class="showroom-location">
+        <div class="container">
+            <h2>Visit Our Showroom</h2>
+            <div class="location-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5093890551753!2d72.5244227!3d19.0176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9d4d6d6d6d5%3A0x6d6d6d6d6d6d6d6d!2sMumbai!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Motor Street, Auto Hub Plaza<br>Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/919876543210">+91 98765 43210</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@autohub.com">info@autohub.com</a></p>
+                        </div>
+                    </div>
+                    <div class="opening-hours">
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 8:00 PM<br>
+                        Saturday: 10:00 AM - 6:00 PM<br>
+                        Sunday: 12:00 PM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Mobile Buttons -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+919876543210" class="sticky-btn">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="https://wa.me/919876543210" class="sticky-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <button class="sticky-btn" onclick="document.getElementById('testDriveModal').style.display='block'">
+            <i class="fas fa-calendar"></i> Test Drive
+        </button>
+    </div>
+
+    <!-- Test Drive Modal -->
+    <div id="testDriveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="this.parentElement.parentElement.style.display='none'">&times;</span>
+            <h2>Book Test Drive</h2>
+            <form onsubmit="submitTestDrive(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <select required>
+                    <option>Select Car</option>
+                </select>
+                <input type="date" required>
+                <select required>
+                    <option>Select Time Slot</option>
+                    <option>9:00 AM - 10:00 AM</option>
+                    <option>10:00 AM - 11:00 AM</option>
+                    <option>11:00 AM - 12:00 PM</option>
+                    <option>3:00 PM - 4:00 PM</option>
+                    <option>4:00 PM - 5:00 PM</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="this.parentElement.parentElement.style.display='none'">&times;</span>
+            <h2>Contact Us</h2>
+            <form onsubmit="submitContact(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Your trusted partner in finding the perfect vehicle</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="cars.html">Browse Cars</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
